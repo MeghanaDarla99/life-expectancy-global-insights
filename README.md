@@ -1,6 +1,7 @@
 #  Health and Development Indicators: Global Insights
 
-This is an academic project completed as part of the *INFO-I 501: Introduction to Informatics* course in the **MS in Health Informatics** program at Indiana University Indianapolis, during the Fall 2023 semester (Aug-Dec 2023). The project explores global disparities in life expectancy using a dataset from Kaggle. Through data cleaning, visualization, and predictive modeling, we identified the strongest social and economic factors influencing health outcomes across countries.
+This is an academic project completed as part of the "INFO-I 501: Introduction to Informatics" course in the MS in Health Informatics program at Indiana University Indianapolis, during the Fall 2023 semester. The project explores global disparities in life expectancy using a dataset from Kaggle. Through data cleaning, visualization, and predictive modeling, we identified the strongest social and economic factors influencing health outcomes across countries.
+
 ---
 
 ##  Dataset
@@ -53,9 +54,12 @@ This is an academic project completed as part of the *INFO-I 501: Introduction t
 
 ```bash
 git clone https://github.com/psushruthi/life-expectancy-global-insights.git
+```
 
 2. Install the required packages:
+```bash
 pip install -r requirements.txt
+```
 
 3. Open notebooks/Our_Project.ipynb in Jupyter Notebook and run all cells.
 
@@ -68,4 +72,15 @@ Special thanks to Professor Zeyana Hamid for her mentorship and guidance through
 ---
 
 ##  License
+
 This project is for academic and educational purposes only.
+
+---
+
+## Contact
+
+For questions or suggestions, please contact [Sushruthi Panakanti](https://github.com/psushruthi) at spanakan@iu.edu
+
+Thank you.
+
+---
