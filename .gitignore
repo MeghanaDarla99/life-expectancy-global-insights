@@ -1,0 +1,24 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Mac hidden files
+*.DS_Store
+
+# Dataset backups
+*.zip
+*.tar.gz
