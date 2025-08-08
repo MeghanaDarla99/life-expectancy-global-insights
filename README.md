@@ -1,6 +1,6 @@
-#  Health and Development Indicators: Global Insights
+## Health and Development Indicators: Global Insights
 
-This is an academic project completed as part of the "INFO-I 501: Introduction to Informatics" course in the MS in Health Informatics program at Indiana University Indianapolis, during the Fall 2023 semester. The project explores global disparities in life expectancy using a dataset from Kaggle. Through data cleaning, visualization, and predictive modeling, we identified the strongest social and economic factors influencing health outcomes across countries.
+This is an academic project completed as part of the **INFO-I 501: Introduction to Informatics** course in the **MS in Health Informatics** program at Indiana University Indianapolis, during the Fall 2023 semester. The project investigates the key social and economic drivers of life expectancy across countries using statistical methods, data visualization, and machine learning models.
 
 ---
 
@@ -8,33 +8,64 @@ This is an academic project completed as part of the "INFO-I 501: Introduction t
 
 - **Source:** [Kaggle – Life Expectancy Data](https://www.kaggle.com/datasets/arunjangir245/life-expectancy-data)
 - **File Used:** [`Life_Expectancy_Data.csv`](./data/Life_Expectancy_Data.csv)
-- **Years Covered:** ~2000 to 2015  
+- **Years Covered:** 2000 to 2015  
 - **Variables Analyzed:** Adult Mortality, Alcohol, Schooling, GDP, HIV/AIDS, BMI, Status (Developed/Developing), etc.
 
 ---
 
-##  Models Implemented
+##  Methodology
 
-- **Linear Regression**
-- **Ridge Regression** (with GridSearchCV)
-- **Decision Tree**
-- **Random Forest**
+We followed a structured 4-stage workflow:
+
+1. **Data Collection & Extraction**  
+   - Extracted and imported `.csv` data via **phpMyAdmin**  
+   - Selected variables based on relevance to global health determinants
+
+2. **Data Preprocessing**  
+   - Outlier detection and capping using **IQR**
+   - Normality tests using **Shapiro-Wilk**
+   - Data normalization using **StandardScaler**
+   - One-hot encoding of categorical variables
+
+3. **Statistical Analysis**  
+   - Non-parametric tests: **Mann-Whitney U**, **Kruskal-Wallis**
+   - Correlation analysis: **Kendall Tau**, correlation matrix and heatmap
+
+4. **Machine Learning Models**  
+   - **Linear Regression**: Weak fit, high error  
+   - **Ridge Regression**: Regularized model with optimized α using **GridSearchCV**  
+   - **Decision Tree**: Handled non-linear patterns effectively  
+   - **Random Forest**: Outperformed all others with best predictive accuracy
 
 ---
 
-##  Key Findings
+##  Tools & Technologies
 
-- **Top Positive Correlates**: Schooling, Income composition of resources, BMI
-- **Top Negative Correlates**: HIV/AIDS, Adult Mortality
-- **Best Performing Model**: Random Forest (highest R² score, lowest RMSE)
+- **Languages:** Python, SQL  
+- **Libraries:** Pandas, NumPy, Seaborn, Scikit-learn, Matplotlib, Statsmodels  
+- **Platforms:** Jupyter Notebook, phpMyAdmin  
+- **Statistical Tests:** Shapiro-Wilk, Mann-Whitney U, Kruskal-Wallis, Kendall Tau
 
 ---
 
-##  Technologies Used
+##  Key Insights
 
-- Python (Jupyter Notebook)
-- Pandas, NumPy, Seaborn, Scikit-learn, Matplotlib, Statsmodels
-- SQL via phpMyAdmin (for initial data extraction)
+- **Strong Positive Correlations**:  
+  - Income composition of resources  
+  - Schooling  
+  - BMI
+
+- **Strong Negative Correlations**:  
+  - HIV/AIDS prevalence  
+  - Adult mortality
+
+- **Best Performing Model**:  
+  - **Random Forest**  
+    - High R², low RMSE  
+    - Robust to non-linearities and variable interactions
+
+- **Policy Implication**:  
+  Investments in education, nutrition, and income equity could significantly extend global life expectancy.
 
 ---
 
@@ -45,23 +76,6 @@ This is an academic project completed as part of the "INFO-I 501: Introduction t
 - Sai Mahidhar Reddy
 - Sudha Rani Yeruva
 - Shamily Reddy
-
----
-
-##  How to Run
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/psushruthi/life-expectancy-global-insights.git
-```
-
-2. Install the required packages:
-```bash
-pip install -r requirements.txt
-```
-
-3. Open notebooks/Our_Project.ipynb in Jupyter Notebook and run all cells.
 
 ---
 
