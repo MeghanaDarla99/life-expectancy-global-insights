@@ -93,7 +93,7 @@ This project is for academic and educational purposes only.
 
 ## Contact
 
-For questions or suggestions, please contact [Sushruthi Panakanti](https://github.com/psushruthi) at spanakan@iu.edu
+For questions or suggestions, please contact [Sushruthi Panakanti](https://github.com/psushruthi) at spanakan@iu.edu or [Meghana Darla](github.com/MeghanaDarla99) at mdarla@emory.edu.
 
 Thank you.
 
